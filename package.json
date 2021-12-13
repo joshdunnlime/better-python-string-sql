@@ -1,60 +1,34 @@
 {
-    "name": "python-string-sql",
-    "displayName": "python-string-sql",
+    "name": "better-python-string-sql",
+    "displayName": "better-python-string-sql",
     "description": "highlight python strings as sql",
-    "version": "1.1.0",
-    "publisher": "ptweir",
+    "version": "0.0.1",
+    "publisher": "Submersible",
     "icon": "docs/logo.png",
     "repository": {
-        "url": "https://github.com/ptweir/python-string-sql"
+        "url": "https://github.com/Submersible/better-python-string-sql"
     },
     "engines": {
-        "vscode": "^1.32.0"
+        "vscode": "^1.63.0"
     },
     "categories": [
-        "Programming Languages",
-        "Snippets"
+        "Programming Languages"
     ],
     "contributes": {
         "grammars": [
             {
-                "path": "./syntaxes/highlight-sql-string.json",
+                "path": "./syntaxes/highlight-sql-string.tmLanguage.json",
                 "scopeName": "python-sql.injection",
                 "injectTo": [
                     "source.python"
                 ],
                 "embeddedLanguages": {
-                    "meta.embedded.sql": "sql"
-                }
-            },
-            {
-                "path": "./syntaxes/highlight-html-string.json",
-                "scopeName": "python-html.injection",
-                "injectTo": [
-                    "source.python"
-                ],
-                "embeddedLanguages": {
-                    "meta.embedded.block.html": "html"
-                }
-            }
-        ],
-        "snippets": [
-            {
-                "language": "python",
-                "path": "./snippets/python.json"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "editor.action.insertSnippet",
-                "key": "cmd+s",
-                "mac": "ctrl+s",
-                "when": "editorTextFocus",
-                "args": {
-                    "langId": "python",
-                    "name": "SQL_highlighted_string"
+                    "meta.embedded.block.sql": "sql"
                 }
             }
         ]
+    },
+    "scripts": {
+        "package": "npx vsce package"
     }
 }

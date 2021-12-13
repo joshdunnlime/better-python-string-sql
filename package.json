@@ -2,14 +2,14 @@
     "name": "better-python-string-sql",
     "displayName": "better-python-string-sql",
     "description": "highlight python strings as sql",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "Submersible",
     "icon": "docs/logo.png",
     "repository": {
         "url": "https://github.com/Submersible/better-python-string-sql"
     },
     "engines": {
-        "vscode": "^1.63.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Programming Languages"
